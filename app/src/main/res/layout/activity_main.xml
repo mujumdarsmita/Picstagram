@@ -5,7 +5,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="16dp"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:foregroundTint="#FFFFFF">
 
 
     <Button
@@ -16,15 +17,26 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="20dp"
             android:visibility="gone"
-            android:text="TAKE PICTURE"
-        />
+            android:text="TAKE PICTURE" />
 
     <ImageView
             android:id="@+id/ivPostImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:scaleType="fitXY"
             android:layout_marginTop="20dp"
             tools:srcCompat="@tools:sample/avatars" />
+
+    <ProgressBar
+            android:id="@+id/pbLoading"
+            android:visibility="invisible"
+            android:layout_below="@+id/ivPostImage"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="#FFFFFF"
+            android:progressDrawable="@android:color/darker_gray"
+            android:backgroundTint="#FFFFFF" />
 
     <EditText
             android:id="@+id/etDescription"
@@ -34,8 +46,7 @@
             android:layout_below="@id/ivPostImage"
             android:layout_marginTop="20dp"
             android:minLines="3"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
     <Button
             android:id="@+id/btnSubmit"
@@ -45,8 +56,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="20dp"
             android:text="SUBMIT"
-            android:visibility="gone"
-        />
+            android:visibility="gone" />
 
     <ImageView
             android:id="@+id/ivNewPost"
