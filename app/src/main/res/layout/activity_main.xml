@@ -7,40 +7,77 @@
         android:layout_margin="16dp"
         tools:context=".MainActivity">
 
-   <EditText
-           android:id="@+id/etDescription"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:hint="description...."
-           android:minLines="3"
-           />
 
     <Button
             android:id="@+id/btnUpload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/etDescription"
-            android:layout_marginTop="20dp"
+            android:layout_above="@+id/ivNewPost"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
             android:text="TAKE PICTURE"
         />
 
     <ImageView
-            android:id="@+id/ivPostimage"
+            android:id="@+id/ivPostImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_below="@+id/btnUpload"
             android:layout_marginTop="20dp"
             tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="description...."
+            android:layout_below="@id/ivPostImage"
+            android:layout_marginTop="20dp"
+            android:minLines="3"
+            android:visibility="gone"
+            />
 
     <Button
             android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ivPostimage"
-            android:layout_marginTop="20dp"
-            android:text="SUBMIT"
+            android:layout_above="@+id/ivNewPost"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="SUBMIT"
+            android:visibility="gone"
         />
+
+    <ImageView
+            android:id="@+id/ivNewPost"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_new_post"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+
+            />
+
+    <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_home"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+
+            />
+
+    <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_profile"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:layout_alignParentEnd="true"
+
+            />
 
 </RelativeLayout>

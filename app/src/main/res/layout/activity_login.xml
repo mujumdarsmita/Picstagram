@@ -8,26 +8,45 @@
         android:layout_margin="20dp"
         tools:context=".LoginActivity">
 
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Picstagram"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:fontFamily="@font/oleo_script" />
+
     <EditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Username"
-        />
+            android:hint=" Username" />
 
     <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Password"
-            android:inputType="textPassword"
-            />
+            android:hint="Password"
+            android:inputType="textPassword" />
 
     <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login"
-        />
+            android:background="#1586DF"
+            android:textColor="#FFFFFF" />
+
+    <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:layout_marginTop="10dp"
+            android:background="#54AC57"
+            android:textColor="#FFFFFF" />
 
 </LinearLayout>
