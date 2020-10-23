@@ -13,22 +13,24 @@
             android:layout_height="wrap_content"
             android:text="Picstagram"
             android:gravity="center"
-            android:textSize="40sp"
+            android:textSize="60sp"
             android:textAllCaps="false"
             android:textStyle="bold"
             android:textColor="#000000"
-            android:fontFamily="@font/oleo_script" />
+            android:fontFamily="@font/font_billabong" />
 
     <EditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:hint=" Username" />
 
     <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:hint="Password"
             android:inputType="textPassword" />
 
@@ -36,6 +38,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/login"
             android:background="#1586DF"
             android:textColor="#FFFFFF" />

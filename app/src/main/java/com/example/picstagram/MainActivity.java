@@ -9,6 +9,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
@@ -47,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+    ActionBar actionBar = getSupportActionBar(); // or getActionBar();
+    // getSupportActionBar().setTitle("My new title"); // set the top title
+    //String title = actionBar.getTitle().toString(); // get the title
+    actionBar.hide(); // or even hide the actionbar
 
     etDescription = findViewById(R.id.etDescription);
     btnUpload = findViewById(R.id.btnUpload);
