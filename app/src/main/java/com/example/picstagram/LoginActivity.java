@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
   }
 
   private void userSignUp(String username, String password) {
-    Toast.makeText(getApplicationContext(), "user SignUp", Toast.LENGTH_SHORT).show();
+   // Toast.makeText(getApplicationContext(), "user SignUp", Toast.LENGTH_SHORT).show();
 
     // creating Parser user
     ParseUser user = new ParseUser();
@@ -83,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
   }
 
   private void userLogin(String username, String password) {
-    Toast.makeText(getApplicationContext(), "user login", Toast.LENGTH_SHORT).show();
+    //Toast.makeText(getApplicationContext(), "user login", Toast.LENGTH_SHORT).show();
     ParseUser.logInInBackground(username, password, new LogInCallback() {
       @Override
       public void done(ParseUser user, ParseException e) {
