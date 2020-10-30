@@ -34,6 +34,7 @@ import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
 import java.io.File;
+import java.util.Date;
 import java.util.List;
 
 import static android.app.Activity.RESULT_OK;
@@ -132,6 +133,7 @@ public class ComposeFragment extends Fragment {
           return;
         }
         ParseUser currentUser = ParseUser.getCurrentUser();
+        Date createdTime = ParseUser.getCurrentUser().getCreatedAt();
         savePost(description, currentUser, photoFile);
         progressBar.setVisibility(ProgressBar.VISIBLE);
 

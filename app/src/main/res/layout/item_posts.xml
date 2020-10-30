@@ -34,10 +34,16 @@
             android:id="@+id/tvDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minLines="3"
             android:layout_below="@id/ivPost"
             tools:text="New kitchen. It is a beautiful kitchen. come and see"
             android:textSize="20sp" />
+
+    <TextView
+            android:id="@+id/tvCreatedTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescription"
+            tools:text="20 june , 2020" />
 
 
 </RelativeLayout>

@@ -14,6 +14,9 @@ import com.bumptech.glide.Glide;
 import com.parse.ParseFile;
 import com.parse.ui.widget.ParseImageView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
@@ -49,11 +52,13 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     TextView tvName;
     TextView tvDescription;
     ParseImageView ivPost;
+    TextView tvCreatedTime;
     public ViewHolder(@NonNull View itemView) {
       super(itemView);
       tvName = itemView.findViewById(R.id.tvName);
       tvDescription = itemView.findViewById(R.id.tvDescription);
       ivPost = itemView.findViewById(R.id.ivPost);
+      tvCreatedTime = itemView.findViewById(R.id.tvCreatedTime);
     }
 
     public void bind(Post post) {
@@ -64,6 +69,11 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         ivPost.setParseFile(post.getImage());
         ivPost.loadInBackground();
       }
+
+      Date date = post.getUser().getCreatedAt();
+      DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+      String createdTime = df.format(date);
+      tvCreatedTime.setText(createdTime);
 
     }
   }
