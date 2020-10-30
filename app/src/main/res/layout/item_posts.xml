@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        >
+
+    <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Smita Mujumdar"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+<!--    <ImageView-->
+<!--            android:id="@+id/ivPost"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_below="@id/tvName"-->
+<!--            android:layout_height="300dp"-->
+<!--            tools:srcCompat="@tools:sample/avatars"-->
+<!--            android:scaleType="centerCrop" />-->
+
+    <com.parse.ui.widget.ParseImageView
+            android:layout_width="match_parent"
+            android:id="@+id/ivPost"
+            android:layout_below="@id/tvName"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
+
+    <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:layout_below="@id/ivPost"
+            tools:text="New kitchen. It is a beautiful kitchen. come and see"
+            android:textSize="20sp" />
+
+
+</RelativeLayout>

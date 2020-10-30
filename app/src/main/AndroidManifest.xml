@@ -12,6 +12,7 @@
             android:label=" "
             android:roundIcon="@drawable/ic_launch"
             android:supportsRtl="true"
+            android:usesCleartextTraffic="true"
             android:theme="@style/AppTheme">
         <activity android:name=".ProfileActivity"></activity>
 

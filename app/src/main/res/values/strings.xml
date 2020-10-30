@@ -2,4 +2,6 @@
     <string name="app_name">Picstagram</string>
     <string name="login">LOG IN</string>
     <string name="picstagram">Picstagram</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

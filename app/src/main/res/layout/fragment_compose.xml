@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.ComposeFragment">
+
+<!--    <ImageView-->
+<!--            android:id="@+id/ivHomePage"-->
+<!--            android:src="@drawable/ic_home"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"/>-->
+
+<!--    <TextView-->
+<!--            android:id="@+id/tvAppname"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:text="Picstagram"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textSize="30sp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/font_billabong"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textStyle="bold" />-->
+
+<!--    <ImageView-->
+<!--            android:id="@+id/ivDirectMessage"-->
+<!--            android:src="@drawable/ic_direct"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"/>-->
+
+
+    <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible"
+            android:layout_below="@id/ivPostImage"
+            android:text="TAKE PICTURE" />
+
+    <ImageView
+            android:id="@+id/ivPostImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    <ProgressBar
+            android:id="@+id/pbLoading"
+            android:visibility="invisible"
+            android:layout_below="@+id/ivPostImage"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="#FFFFFF"
+            android:progressDrawable="@android:color/darker_gray"
+            android:backgroundTint="#FFFFFF" />
+
+    <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="description...."
+            android:layout_below="@id/ivPostImage"
+            android:layout_marginTop="20dp"
+            android:minLines="3"
+            android:visibility="gone" />
+
+    <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etDescription"
+            android:layout_marginBottom="20dp"
+            android:text="SUBMIT"
+            android:visibility="gone" />
+
+
+</RelativeLayout>

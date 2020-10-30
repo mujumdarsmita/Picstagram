@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:title="Home"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_home"
+            android:id="@+id/action_home" />
+    <item
+            android:title="compose"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_new_post"
+            android:id="@+id/action_compose" />
+    <item
+            android:title="profile"
+            app:showAsAction="always"
+            android:id="@+id/action_profile"
+            android:icon="@drawable/ic_profile" />
+</menu>

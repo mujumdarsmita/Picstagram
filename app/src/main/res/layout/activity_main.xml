@@ -8,110 +8,19 @@
         tools:context=".MainActivity"
         android:foregroundTint="#FFFFFF">
 
-
-    <ImageView
-            android:id="@+id/ivHomePage"
-            android:src="@drawable/ic_home"
-            android:layout_width="25dp"
-            android:layout_height="25dp"/>
-
-    <TextView
-            android:id="@+id/tvAppname"
-            android:layout_width="wrap_content"
-            android:text="Picstagram"
-            android:layout_centerHorizontal="true"
-            android:textSize="30sp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font_billabong"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-    <ImageView
-            android:id="@+id/ivDirectMessage"
-            android:src="@drawable/ic_direct"
-            android:layout_alignParentEnd="true"
-            android:layout_width="25dp"
-            android:layout_height="25dp"/>
-
-
-    <Button
-            android:id="@+id/btnUpload"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/ivNewPost"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp"
-            android:visibility="gone"
-            android:text="TAKE PICTURE" />
-
-    <ImageView
-            android:id="@+id/ivPostImage"
+    <FrameLayout
+            android:id="@+id/flContainer"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="50dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomNavigation"
+            />
 
-    <ProgressBar
-            android:id="@+id/pbLoading"
-            android:visibility="invisible"
-            android:layout_below="@+id/ivPostImage"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:progressTint="#FFFFFF"
-            android:progressDrawable="@android:color/darker_gray"
-            android:backgroundTint="#FFFFFF" />
 
-    <EditText
-            android:id="@+id/etDescription"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="description...."
-            android:layout_below="@id/ivPostImage"
-            android:layout_marginTop="20dp"
-            android:minLines="3"
-            android:visibility="gone" />
-
-    <Button
-            android:id="@+id/btnSubmit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/ivNewPost"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp"
-            android:text="SUBMIT"
-            android:visibility="gone" />
-
-    <ImageView
-            android:id="@+id/ivNewPost"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/ic_new_post"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:clickable="true"
-
-            />
-
-    <ImageView
-            android:id="@+id/ivHome"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/ufi_heart"
-            android:layout_alignParentBottom="true"
-            android:clickable="true"
-
-            />
-
-    <ImageView
-            android:id="@+id/ivProfile"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/ic_profile"
-            android:layout_alignParentBottom="true"
-            android:clickable="true"
-            android:layout_alignParentEnd="true"
-
-            />
+            app:menu="@menu/menu_bottom_navigation" />
 
 </RelativeLayout>
