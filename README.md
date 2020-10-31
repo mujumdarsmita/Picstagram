@@ -18,7 +18,7 @@ The following **optional** features are implemented:
 - [X] Style the feed to look like the real Instagram feed.
 - [ ] User can load more posts once he or she reaches the bottom of the feed using infinite scrolling.
 - [X] Show the username and creation time for each post.
-- [ ] User can tap a post to view post details, including timestamp and caption.
+- [X] User can tap a post to view post details, including timestamp and caption.
 - [ ] User Profiles
       - [X] Allow the logged in user to add a profile photo
       - [X] Display the profile photo with each post
